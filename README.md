@@ -4,5 +4,5 @@
 ## Created our own custom hook "useBookSearch"
 
 # Todo
-## Fetch the right data instead of getting an empty object.
+## The API fetches data successfuly, we are located in Morocco (bad internet, far from North American servers) so we get the response around a second late.
 
