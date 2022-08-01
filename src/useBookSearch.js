@@ -13,11 +13,12 @@ export default function useBookSearch(query, pageNumber) {
                 cancel = c
             }).then((res) =>{
                 console.log(res.data);
-            }) 
+            }).catch((e) => {
+                if (axios.isCancel(e)) return
+            })
             // Here we are chaining the then() then we need to catch the error
             // You are inside a JavaScript object so stop using semiclons in order to avoid getting these errors again
     }, [query, pageNumber]);
-  return (
-    <div>useBookSearch</div>
-  );
+    }
+    return("Hello");
 }
