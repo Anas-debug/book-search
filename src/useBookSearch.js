@@ -12,13 +12,10 @@ export default function useBookSearch(query, pageNumber) {
             cancelToken : new axios.CancelToken((c) => {
                 cancel = c;
             })
-        }).then(res => {
-            console.log(res.data);
-        }).catch();
-
-        return () => cancel();
+            // You are inside a JavaScript object so stop using semiclons in order to avoid getting these errors again
     }, [query, pageNumber]);
   return (
     <div>useBookSearch</div>
-  )
+  );
+}
 }
