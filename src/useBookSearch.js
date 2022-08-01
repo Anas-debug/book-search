@@ -14,7 +14,7 @@ export default function useBookSearch(query, pageNumber) {
             })
         }).then(res => {
             console.log(res.data);
-        });
+        }).catch();
 
         return () => cancel();
     }, [query, pageNumber]);
