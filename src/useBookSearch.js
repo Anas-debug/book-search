@@ -10,12 +10,14 @@ export default function useBookSearch(query, pageNumber) {
             url : 'https://openlibrary.org/search.json',
             params: {q: query, page : pageNumber},
             cancelToken : new axios.CancelToken((c) => {
-                cancel = c;
-            })
+                cancel = c
+            }).then((res) =>{
+                console.log(res.data);
+            }) 
+            // Here we are chaining the then() then we need to catch the error
             // You are inside a JavaScript object so stop using semiclons in order to avoid getting these errors again
     }, [query, pageNumber]);
   return (
     <div>useBookSearch</div>
   );
-}
 }
