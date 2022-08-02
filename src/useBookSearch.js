@@ -16,9 +16,7 @@ export default function useBookSearch(query, pageNumber) {
             }).catch((e) => {
                 if (axios.isCancel(e)) return
             })
-            // Here we are chaining the then() then we need to catch the error
-            // You are inside a JavaScript object so stop using semiclons in order to avoid getting these errors again
-    }, [query, pageNumber]);
-    }
-    return("Hello");
+    }) , [query, pageNumber]);
+    return(<div>Hello</div>);
+}
 }
