@@ -9,3 +9,4 @@
 ## The API fetches data successfuly, we are located in Morocco (bad internet, far from North American servers) so we get the response around a second late.
 ## Canelation in API fetching works as expected.
 
+# App to be debugged especially in the useBookSearch Hook
